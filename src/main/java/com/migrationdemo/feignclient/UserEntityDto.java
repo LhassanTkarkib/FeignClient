@@ -13,6 +13,6 @@ public class UserEntityDto implements Serializable {
     String email;
     String password;
     LocalDate createdDate;
-    String accountNumber;
+    int accountsNumber;
 
 }
