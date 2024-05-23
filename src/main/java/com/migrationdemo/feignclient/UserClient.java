@@ -22,4 +22,10 @@ public interface UserClient {
 
     @PostMapping("/api/v1/user/createUser")
     UserEntityDto createUser(@RequestBody UserEntityDto userDTO);
+
+    @PutMapping("/api/v1/user/increaseNumberOfAccounts/{userId}")
+    UserEntityDto increaseNumberOfAccounts(@PathVariable Long userId);
+
+    @PutMapping("/api/v1/user/decreaseNumberOfAccounts/{userId}")
+    UserEntityDto decreaseNumberOfAccounts(@PathVariable Long userId);
 }
